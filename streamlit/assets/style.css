@@ -1,0 +1,36 @@
+.main {
+    background: #0f172a;
+}
+
+.title {
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.board-cell {
+    width: 45px;
+    height: 45px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+}
+
+.hit {
+    background-color: red;
+}
+
+.miss {
+    background-color: gray;
+}
+
+.ship {
+    background-color: #2563eb;
+}
