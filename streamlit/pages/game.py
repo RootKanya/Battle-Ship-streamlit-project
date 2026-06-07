@@ -52,8 +52,9 @@ else:
     st.divider()
 
     # ==========================================
-    # LOGIKA UNTUK MODE 2P (HOT-SEAT / BUFFER SCREEN)
+    #  MODE 2P (HOT-SEAT / BUFFER SCREEN)
     # ==========================================
+
     if st.session_state.mode == "2p":
         
         # JIKA BELUM SIAP (TAMPILKAN BUFFER SCREEN)
@@ -66,9 +67,8 @@ else:
                 st.session_state.ready_player = current_turn
                 st.rerun()
                 
-        # JIKA SUDAH SIAP (TAMPILKAN GAME SCREEN)
         else:
-            # Tentukan siapa yang sedang melihat layar
+
             me = current_turn
             enemy = "player2" if me == "player1" else "player1"
             
@@ -87,8 +87,9 @@ else:
                 render_board(game_state[me]["target_board"], is_interactive=True, game_id=st.session_state.game_id, player_role=me, token=st.session_state.token)
 
     # ==========================================
-    # LOGIKA UNTUK MODE 1P (TAMPILAN NORMAL)
+    # MODE 1P (TAMPILAN NORMAL)
     # ==========================================
+
     else:
         col_score1, col_score2 = st.columns(2)
         with col_score1:
