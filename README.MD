@@ -47,3 +47,25 @@ The game is now playable at http://localhost:8501
          Gray / Miss: You hit empty water. (-10 points)
 
 ### Win Condition: The game ends when one player's Sisa Kapal (Remaining Ships) reaches 0.
+
+## Streamlit User Interface
+
+### 1. Home Page
+
+![Home Page](./page-ui/home.png)
+
+### 2. Gameplay Page
+
+![Gameplay Page](./page-ui/gameplay.png)
+
+### 3. Leaderboard Page 
+
+![Leaderboard Page](./page-ui/leaderboard.png)
+
+### 4. Buffer Page for 2P Mode
+
+![Buffer Page](./page-ui/buffer.png)
+
+### Game Over Page 
+
+![Game Over Page](./page-ui/gameover.png)
