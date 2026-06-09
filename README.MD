@@ -6,30 +6,35 @@ First, ensure you are in the root directory of the project and create a clean Py
 python3 -m venv venv
 source venv/bin/activate
 pip install fastapi uvicorn pydantic streamlit requests pandas streamlit-cookies-manager
+```
 
-2. Start the FastAPI Backend
+### 2. Start the FastAPI Backend
 
 Open Terminal 1, activate the environment, and start the API server.
 Bash
 
+```bash
 source venv/bin/activate
 cd backend
 uvicorn api_main:app --reload --port 8000
+```
 
 The backend is now running at http://localhost:8000
 
-3. Start the Streamlit Frontend
+### 3. Start the Streamlit Frontend
 
 Open Terminal 2, activate the environment, and start the Streamlit app.
 Bash
 
+```bash
 source venv/bin/activate
 cd streamlit
 streamlit run main.py
+```
 
 The game is now playable at http://localhost:8501
 
-How to Play
+### How to Play
 
     Register & Login: Create a new account or log in to an existing one.
 
@@ -41,4 +46,4 @@ How to Play
 
          Gray / Miss: You hit empty water. (-10 points)
 
-    Win Condition: The game ends when one player's Sisa Kapal (Remaining Ships) reaches 0.
+### Win Condition: The game ends when one player's Sisa Kapal (Remaining Ships) reaches 0.
