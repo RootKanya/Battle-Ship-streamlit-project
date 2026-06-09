@@ -4,7 +4,6 @@ from services.api import get_leaderboard
 
 st.markdown("""
 <div class="bg-red-500 text-white p-8 text-4xl">
-TEST TAILWIND
 </div>
 """, unsafe_allow_html=True)
 
