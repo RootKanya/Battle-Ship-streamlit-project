@@ -1,36 +1,43 @@
-.main {
-    background: #0f172a;
+/* Semua tombol */
+div.stButton > button {
+    min-height: 50px;
+    font-size: 1.5rem !important;
+    font-weight: 800 !important;
+    border-radius: 12px !important;
+    letter-spacing: 1px;
+    transition: transform 0.2s;
 }
 
-.title {
-    font-size: 42px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
+div.stButton > button:hover {
+    transform: scale(1.02);
 }
 
-.card {
-    background: #1e293b;
-    padding: 20px;
-    border-radius: 15px;
-    margin-bottom: 15px;
+/* PRIMARY BUTTON */
+div.stButton > button[kind="primary"] {
+    background-color: #2563eb !important;
+    color: white !important;
+    border: 2px solid #2563eb !important;
 }
 
-.board-cell {
-    width: 45px;
-    height: 45px;
-    border-radius: 8px;
-    border: 1px solid #475569;
+div.stButton > button[kind="primary"]:hover {
+    background-color: #1d4ed8 !important;
+    border-color: #1d4ed8 !important;
 }
 
-.hit {
-    background-color: red;
+/* SECONDARY BUTTON */
+div.stButton > button[kind="secondary"] {
+    background-color: #000000 !important;
+    color: white !important;
+    border: 2px solid #ffffff !important;
 }
 
-.miss {
-    background-color: gray;
+div.stButton > button[kind="secondary"]:hover {
+    background-color: #111827 !important;
+    border-color: #ffffff !important;
 }
 
-.ship {
-    background-color: #2563eb;
+.block-container {
+    max-width: 100% !important;
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
 }
